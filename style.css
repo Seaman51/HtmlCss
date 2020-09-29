@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 header ul li {
@@ -9,12 +9,28 @@ header ul li {
     background-color: #eaeaea;
     margin-right: 75px;
     border: 2px solid #000;
-    padding: 7px;
+    padding: 12px;
+    border-radius: 70%;
 }
 
 header ul a {
-    color: blue;
+    color: #0000ff;
     text-decoration: none;
+}
+
+ul.menu a:hover {
+    font: italic bold 20px Arial;
+    color: #ed0d7d;
+}
+
+h1 {
+    background: #152e83;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Courier";
+    border-radius: 50%;
 }
 
 .desc_s,
@@ -33,12 +49,22 @@ header ul a {
     line-height: 16px;
 }
 
+.desc_s + p:first-letter {
+    color: #03c03c;
+    font-size: 26px;
+}
+
 .desc_l + p {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+.desc_l + p:first-letter {
+    color: #03c03c;
+    font-size: 26px;
 }
 
 .list {
@@ -60,6 +86,68 @@ header ul a {
     background-color: #eaeaea;
 }
 
-.image {
-    outline: 2px solid #484343;
+
+input[type="text"],
+input[type="email"] {
+    width: 300px;
+    height: 25px;
+    border-width: 1px;
+    border-color: #152e83;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #152e83;
+}
+
+input[type="email"]:focus {
+    color: black;
+    background-color: #00fc6a;
+}
+
+input[type="text"],
+textarea {
+    text-transform: capitalize;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+th {
+    background: #c6f5f0;
+}
+
+td {
+    background: #f2fcfb;
+}
+
+caption {
+    font-size: 18px;
+}
+
+thead tr {
+    height: 50px;
+}
+
+.product_img {
+    border: solid;
+    border-color: #152e83;
+    ;
+}
+
+.product_img:hover {
+    border: none;
+    margin: 3px;
 }
