@@ -2,25 +2,59 @@ body {
     background-color: #ffffff;
 }
 
-header ul li {
-    font: bold 20px Arial, Verdana;
-    list-style-type: none;
-    display: inline;
-    background-color: #eaeaea;
-    margin-right: 75px;
-    border: 2px solid #000;
-    padding: 12px;
-    border-radius: 70%;
+.container {
+    width: 800px;
+    margin: 0 auto;
 }
 
-header ul a {
-    color: #0000ff;
+.logo {
+    width: 163px;
+    height: 53px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header {
+    height: 90px;
+}
+
+.menu {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+}
+
+.link {
+    display: inline-block;
+    height: 30px;
+    font: bold 20px Arial, Verdana;
+    border: 1px solid #000;
+    background-color: #eaeaea;
+    padding: 12px;
+    border-radius: 70%;
+
+}
+
+.link a {
+    color: #152e83;
     text-decoration: none;
 }
 
-ul.menu a:hover {
-    font: italic bold 20px Arial;
+.link a:hover {
     color: #ed0d7d;
+}
+
+.footer {
+    height: 40px;
+    background: #152e83;
+}
+
+.footer p {
+    display: block;
+    color: white;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 h1 {
@@ -33,6 +67,34 @@ h1 {
     border-radius: 50%;
 }
 
+.catalog {
+    height: 300px;
+}
+
+.product {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.product a {
+    display: block;
+    text-decoration: none;
+}
+
+.forma {
+    border: 1px solid #000;
+    width: 350px;
+    float: right;
+    clear: both;
+}
+
+.adress {
+    border: 1px solid #000;
+    clear: both;
+    float: left;
+}
+
 .desc_s,
 .desc_l,
 .spec {
@@ -42,19 +104,19 @@ h1 {
     background-color: #eaeaea;
 }
 
-.desc_s + p {
+.desc_s+p {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
 
-.desc_s + p:first-letter {
+.desc_s+p:first-letter {
     color: #03c03c;
     font-size: 26px;
 }
 
-.desc_l + p {
+.desc_l+p {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
@@ -62,7 +124,7 @@ h1 {
     text-align: left;
 }
 
-.desc_l + p:first-letter {
+.desc_l+p:first-letter {
     color: #03c03c;
     font-size: 26px;
 }
