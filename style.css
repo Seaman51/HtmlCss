@@ -15,6 +15,7 @@ body {
 }
 
 .header {
+    background-image: url(img/1500x500.jpg);
     height: 90px;
 }
 
@@ -32,6 +33,7 @@ body {
     background-color: #eaeaea;
     padding: 12px;
     border-radius: 70%;
+    margin-left: 10px;
 
 }
 
@@ -83,18 +85,23 @@ h1 {
 }
 
 .forma {
-    border: 1px solid #000;
     width: 350px;
+    padding: 10px;
     float: right;
-    clear: both;
+  
 }
 
-.adress {
-    border: 1px solid #000;
-    clear: both;
+.adress { 
+    overflow: hidden;
+}
+.product_foto{
     float: left;
 }
-
+.desc{
+    overflow: hidden;
+    height: 290px;
+    padding: 10px;
+}
 .desc_s,
 .desc_l,
 .spec {
@@ -104,14 +111,15 @@ h1 {
     background-color: #eaeaea;
 }
 
-.desc_s+p {
+.desc_s{
     color: #707070;
-    font-size: 14px;
+    font-size: 20px;
     font-style: italic;
     line-height: 16px;
 }
 
-.desc_s+p:first-letter {
+.desc:first-letter,
+.info:first-letter {
     color: #03c03c;
     font-size: 26px;
 }
